@@ -29,8 +29,4 @@ class User extends Authenticatable
 
     protected $dates = ['last_login'];
 
-    // public function products()
-    // {
-    // 	return $this->hasMany(Product::class);
-    // }
 }

@@ -23,9 +23,12 @@ Route::get('home', function () {
 	return view('home');
 });
 
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('info', function () {
 	return view('info');
 });
+
+Route::resource('articles', 'ArticlesController');
 
 // Route::resource('products', 'ProductsController');
