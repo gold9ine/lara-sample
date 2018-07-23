@@ -32,3 +32,8 @@ Route::get('info', function () {
 Route::resource('articles', 'ArticlesController');
 
 // Route::resource('products', 'ProductsController');
+
+// DB::listen(function ($query){
+// 	// var_dump($query->sql);
+// 	dump($query->sql);
+// });

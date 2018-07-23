@@ -35,6 +35,13 @@
 <body>
 	<!-- nav -->
 	@include('partials.nav')
+
+	<!-- flash_message -->
+	@if(session()->has('flash_message'))
+	<div class="alert alert-info" fole="alert">
+		{{ session('flash_message') }}
+	</div>
+	@endif
 	
 	<!-- content -->
 	@yield('content')
